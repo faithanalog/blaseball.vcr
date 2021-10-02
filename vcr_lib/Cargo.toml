@@ -32,5 +32,6 @@ features = ["derive"]
 version = "1.0.64"
 features = ["preserve_order", "raw_value"]
 
-[dependencies.xdelta3]
-git = "https://github.com/alisww/xdelta3-rs.git"
+# violet-spark lmao
+#[dependencies.xdelta3]
+#git = "https://github.com/alisww/xdelta3-rs.git"

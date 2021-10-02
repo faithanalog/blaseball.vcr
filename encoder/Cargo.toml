@@ -38,8 +38,9 @@ features = ["blocking","json","gzip","deflate"]
 version = "1.0"
 features = ["derive"]
 
-[dependencies.xdelta3]
-git = "https://github.com/alisww/xdelta3-rs.git"
+# violet spark - lmao
+#[dependencies.xdelta3]
+#git = "https://github.com/alisww/xdelta3-rs.git"
 
 [[bin]]
 name = "build_entities"

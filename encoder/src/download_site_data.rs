@@ -79,7 +79,9 @@ pub fn encode_resource<W: Write + Seek>(
             basis.as_bytes().to_vec()
         };
 
-        let delta = xdelta3::encode(&next, &last, 9i32 << 20i32).unwrap();
+        // violet spark - lmao
+        //let delta = xdelta3::encode(&next, &last, 9i32 << 20i32).unwrap();
+        let delta = Vec::with_capacity(0);
 
         last = next;
 

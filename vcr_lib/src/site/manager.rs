@@ -87,15 +87,16 @@ impl ResourceManager {
 
         let mut res: Vec<u8> = header.basis.clone();
 
-        for idx in 0..delta_idx + 1 {
-            let (offset, length, _) = header.deltas[idx as usize];
-            delta_file.seek(SeekFrom::Start(offset))?;
+        // violet spark - lmao
+        //for idx in 0..delta_idx + 1 {
+            //let (offset, length, _) = header.deltas[idx as usize];
+            //delta_file.seek(SeekFrom::Start(offset))?;
 
-            let mut delta_buffer: Vec<u8> = vec![0; length as usize];
-            delta_file.read_exact(&mut delta_buffer)?;
+            //let mut delta_buffer: Vec<u8> = vec![0; length as usize];
+            //delta_file.read_exact(&mut delta_buffer)?;
 
-            res = xdelta3::decode(&delta_buffer, &res).unwrap();
-        }
+            //res = xdelta3::decode(&delta_buffer, &res).unwrap();
+        //}
 
         Ok(res)
     }
